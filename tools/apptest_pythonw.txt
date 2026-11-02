@@ -1,0 +1,10 @@
+latest note: note_20260621_144725; tasks.json present before: False
+emitting tray.extract_tasks_latest (the menu action)...
+[tasks] extract requested (scope=latest)
+[balloon] Extracting tasks from 1 note(s)…
+[tasks] complete: 2 task(s) from 1 note(s) via llm
+[balloon] Found 2 task(s) across 1 note(s) via llm. Saved to the notes folder.
+
+tasks.json present after: True  (waited 16s)
+balloons seen: ['Extracting tasks from 1 note(s)…', 'Found 2 task(s) across 1 note(s) via llm. Saved to the notes folder.']
+RESULT: PASS — app path produced tasks.json

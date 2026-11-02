@@ -1,0 +1,15 @@
+# Voice Notes — Phase 1 dependencies (pure Python, official PyPI only).
+# Pinned to versions verified working on Python 3.12 / Windows 11.
+# For supply-chain integrity, install from the hash-locked requirements.lock
+# (pip install --require-hashes -r requirements.lock); this file is the
+# human-readable source of truth.
+# Phase 1 — recording + UI
+PySide6==6.11.1
+sounddevice==0.5.5
+pynput==1.8.2
+numpy==2.4.6
+soundfile==0.14.0
+# Phase 2 — local transcription (pulls ctranslate2, av, tokenizers, onnxruntime, huggingface-hub)
+faster-whisper==1.2.1
+# Dev/security tooling (not imported at runtime)
+pip-audit==2.10.1

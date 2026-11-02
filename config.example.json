@@ -1,0 +1,74 @@
+{
+  "audio": {
+    "device": null,
+    "samplerate": 16000,
+    "channels": 1,
+    "blocksize": 1600
+  },
+  "hotkey": {
+    "key": "r",
+    "taps": 3,
+    "window_ms": 600,
+    "cooldown_ms": 1500,
+    "erase_trigger_chars": false
+  },
+  "overlay": {
+    "corner": "top_right",
+    "screen_index": 0,
+    "margin": 16
+  },
+  "transcription": {
+    "enabled": true,
+    "engine": "faster-whisper",
+    "model": "small",
+    "compute_type": "int8",
+    "cpu_threads": 8,
+    "beam_size": 1,
+    "language": "auto",
+    "biasing": {
+      "initial_prompt": "Add domain terms you want recognized here, comma separated.",
+      "hotwords": ""
+    }
+  },
+  "dictation": {
+    "hotkey": "d",
+    "taps": 3,
+    "window_ms": 600,
+    "cooldown_ms": 1500,
+    "model": "small",
+    "cpu_threads": 8,
+    "beam_size": 1,
+    "prewarm": true,
+    "silence_ms": 600,
+    "silence_rms": 0.006,
+    "min_phrase_ms": 350,
+    "injection": "type",
+    "language": "en",
+    "stall_timeout_s": 20,
+    "max_no_speech": 0.6,
+    "min_avg_logprob": -1.0
+  },
+  "tasks": {
+    "llm_base_url": "http://localhost:1234/v1",
+    "model": "",
+    "auto_start_lms": true,
+    "output": ["local", "sticky"],
+    "master_file": "tasks_master.md",
+    "restart_sticky": false
+  },
+  "retention": {
+    "max_age_days": 30,
+    "audio_cap_gb": 3.5,
+    "keep_transcripts": true
+  },
+  "storage": {
+    "format": "flac"
+  },
+  "ui": {
+    "startup_notification": true
+  },
+  "security": {
+    "warn_if_admin": true,
+    "lock_notes_dir": true
+  }
+}

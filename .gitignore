@@ -1,0 +1,33 @@
+# === Private user data — NEVER commit ===
+# real transcripts, task extractions, generated task files
+notes/
+# recorded audio
+*.flac
+*.wav
+*.mp3
+
+# Logs (contain local paths + possibly transcribed text)
+*.log
+*.log.err
+
+# Local config (personal biasing prompt / device / paths)
+config.json
+
+# Compiled launcher binary
+tools/launcher/*.exe
+tools/launcher/bin/
+tools/launcher/obj/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+*.egg-info/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
